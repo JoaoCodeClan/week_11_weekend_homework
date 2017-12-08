@@ -22,7 +22,11 @@ let foryest;
    assert.strictEqual(0,noturg);
 
  })
+ it("should be able to get a value  of 1 for urgent", function(){
 
+   assert.strictEqual(1,urg);
+
+ })
 
 
 })
