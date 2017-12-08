@@ -32,5 +32,9 @@ describe("Hero", function(){
 
  })
 
+ it("should be able to have a value for health ", function(){
+   assert.strictEqual(200,hero.health);
+
+ })
 
 })
