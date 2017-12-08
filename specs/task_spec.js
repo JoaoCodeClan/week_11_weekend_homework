@@ -22,4 +22,9 @@ let task4;
 
  })
 
+ it("should be able to have an urgency level value", function(){
+   assert.strictEqual(2,task2.urgencyLevel);
+
+ })
+
 })
