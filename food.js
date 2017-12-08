@@ -8,8 +8,4 @@ const Food = function(name, replenishment,isPoisoned){
 
 }
 
-
-
-
-
 module.exports = Food;
