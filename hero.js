@@ -20,10 +20,12 @@ Hero.prototype.addTask = function(task){
 }
 
 Hero.prototype.eatFood = function(itemToEat){
-  if(itemToEat.name === this.favouriteFood){
+  if(itemToEat.name === this.favouriteFood && itemToEat.isPoisoned!== true){
     this.health += itemToEat.replenishment*1.5
-  }else{
+  }else if (itemToEat.name !== this.favouriteFood && itemToEat.isPoisoned!== true){
     this.health += itemToEat.replenishment;
+  }else{
+    this.health -= itemToEat.replenishment;
   }
 }
 
@@ -57,6 +59,8 @@ Hero.prototype.showIncompletTasks = function(){
     return task.iscomplete !== true;
   });
 }
+
+
 
 
 

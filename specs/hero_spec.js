@@ -106,4 +106,13 @@ describe("Hero", function(){
 
   });
 
+
+  it("Heroes that eat poisonous food should lose health.", function(){
+    hero.eatFood(food);
+    assert.strictEqual(hero.health,210);
+    rat.poisonItem(food1);
+    hero.eatFood(food1);
+    assert.strictEqual(hero.health,160);
+  });
+
 })
