@@ -52,4 +52,9 @@ describe("Hero", function(){
 
  });
 
+ it("hero should be able to eat food, and health should go up by the replenishment value", function(){
+   hero.eatFood(food1);
+   assert.strictEqual(hero.health,250);
+
+ });
 })

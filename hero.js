@@ -19,5 +19,9 @@ Hero.prototype.addTask = function(task){
 
 }
 
+Hero.prototype.eatFood = function(itemToEat){
+    this.health += itemToEat.replenishment;
+
+}
 
 module.exports = Hero;
