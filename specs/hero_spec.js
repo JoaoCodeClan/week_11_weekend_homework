@@ -97,4 +97,13 @@ describe("Hero", function(){
 
   });
 
+  it("A hero should be able to view tasks that are marked as incomplet", function(){
+    hero.addTask(task3);
+    hero.addTask(task1);
+    hero.addTask(task2);
+    hero.addTask(task4);
+    assert.deepStrictEqual(hero.showIncompletTasks(),[task3, task4])
+
+  });
+
 })

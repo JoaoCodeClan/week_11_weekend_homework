@@ -46,13 +46,17 @@ Hero.prototype.sortTasksByReward = function(){
   });
 }
 
-  Hero.prototype.showCompletedTasks = function(){
-    return  this.tasksToComplete.filter(function(task){
-      return task.iscomplete === true;
-    });
+Hero.prototype.showCompletedTasks = function(){
+  return  this.tasksToComplete.filter(function(task){
+    return task.iscomplete === true;
+  });
+}
 
-  }
-
+Hero.prototype.showIncompletTasks = function(){
+  return  this.tasksToComplete.filter(function(task){
+    return task.iscomplete !== true;
+  });
+}
 
 
 
