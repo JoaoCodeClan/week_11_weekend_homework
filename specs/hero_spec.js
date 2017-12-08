@@ -36,5 +36,9 @@ describe("Hero", function(){
    assert.strictEqual(200,hero.health);
 
  })
+ it("should be able to have a favourite food", function(){
+   assert.strictEqual("Pizza",hero.favouriteFood);
+
+ })
 
 })
