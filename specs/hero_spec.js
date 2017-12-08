@@ -18,7 +18,7 @@ describe("Hero", function(){
 
  beforeEach(function(){
    task1= new Task(DifficultyLevel.Easy, UrgencyLevel.NotUrgent, 10, true);
-   task2= new Task(DifficultyLevel.Medium, UrgencyLevel.Urgent, 20, true);
+   task2= new Task(DifficultyLevel.Medium, UrgencyLevel.Urgent, 200, true);
    task3= new Task(DifficultyLevel.Hard, UrgencyLevel.Emergency, 30, false);
    task4= new Task(DifficultyLevel.Very_Hard, UrgencyLevel.ForYesterday, 50, false);
    food = new Food("cheese", 10, false);
@@ -69,7 +69,7 @@ describe("Hero", function(){
    hero.addTask(task1);
    hero.addTask(task2);
    hero.addTask(task4);
-   assert.deepStrictEqual(hero.sortTasksByDifficulty(),[task1, task2, task3, task4]);
+   assert.deepStrictEqual(hero.sortTasksByReward(),[task1, task3, task4, task2]);
  });
 
  it("A hero should be able to sort their tasks by  urgency ", function(){
@@ -79,9 +79,13 @@ describe("Hero", function(){
  assert.deepStrictEqual(hero.sortTasksByUrgency(),[task1, task2, task4]);
  });
 
- // it("A hero should be able to sort their tasks by reward.", function(){
- //
- //
- // });
+ it("A hero should be able to sort their tasks by reward.", function(){
+   hero.addTask(task3);
+   hero.addTask(task1);
+   hero.addTask(task2);
+   hero.addTask(task4);
+   assert.deepStrictEqual(hero.sortTasksByDifficulty(),[task1, task2, task3, task4])
+
+ });
 
 })

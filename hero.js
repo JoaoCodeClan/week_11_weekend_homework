@@ -40,5 +40,11 @@ Hero.prototype.sortTasksByUrgency = function(){
 });
 }
 
+Hero.prototype.sortTasksByReward = function(){
+  return this.tasksToComplete.sort(function(a,b) {
+    return (a.reward)-(b.reward);
+});
+}
+
 
 module.exports = Hero;
