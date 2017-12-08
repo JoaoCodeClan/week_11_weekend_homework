@@ -1,4 +1,4 @@
-const _=require('lodash');
+const _ = require('lodash');
 
 
 const Food = function(name, replenishment,isPoisoned){
@@ -6,4 +6,7 @@ const Food = function(name, replenishment,isPoisoned){
   this.replenishment = replenishment;
   this.isPoisoned = isPoisoned;
 
-})
+}
+
+
+module.exports = Food;
