@@ -19,23 +19,23 @@ let foryest;
 
  it("should be able to get a value  of 0 for not urgent", function(){
 
-   assert.strictEqual(0,noturg);
+   assert.strictEqual(1,noturg);
 
  })
  it("should be able to get a value  of 1 for urgent", function(){
 
-   assert.strictEqual(1,urg);
+   assert.strictEqual(2,urg);
 
  })
  it("should be able to get a value  of 2 for emergency", function(){
 
-   assert.strictEqual(2,emer);
+   assert.strictEqual(3,emer);
 
  })
 
  it("should be able to get a value  of 3 for Foryesterday", function(){
 
-   assert.strictEqual(3,foryest);
+   assert.strictEqual(4,foryest);
 
  })
 
