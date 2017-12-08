@@ -46,4 +46,10 @@ describe("Hero", function(){
 
  });
 
+ it("should be able to add tasks to taskstocomplete", function(){
+   hero.addTask(task1);
+   assert.strictEqual(hero.countTasks(),1);
+
+ });
+
 })
