@@ -7,7 +7,7 @@ let food ;
 
 beforeEach(function(){
 
-  food = new Food("pasta", 10, "notPoisoned");
+  food = new Food("pasta", 10, false);
 
 });
 
@@ -20,7 +20,7 @@ it("food should have a replenishment value", function(){
 })
 
 it("food should be able to check if its poisoned", function(){
-  assert.strictEqual(10, food.replenishment);
+  assert.strictEqual(false, food.isPoisoned)
 })
 
 })
