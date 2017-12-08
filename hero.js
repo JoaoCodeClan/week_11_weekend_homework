@@ -33,4 +33,12 @@ Hero.prototype.sortTasksByDifficulty = function(){
 });
 }
 
+
+Hero.prototype.sortTasksByUrgency = function(){
+  return this.tasksToComplete.sort(function(a,b) {
+    return (a.urgencyLevel)-(b.urgencyLevel);
+});
+}
+
+
 module.exports = Hero;
