@@ -27,4 +27,9 @@ let task4;
 
  })
 
+ it("should be able to have a value for reward", function(){
+   assert.strictEqual(30,task3.reward);
+
+ })
+
 })
