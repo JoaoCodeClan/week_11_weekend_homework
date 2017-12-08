@@ -10,7 +10,14 @@ const Hero = function(name, health,favouriteFood){
 }
 
 Hero.prototype.countTasks= function(){
-   return this.tasksToComplete.lenght;
+   return this.tasksToComplete.length;
 
 }
+
+Hero.prototype.addTask = function(task){
+    this.tasksToComplete.push(task);
+
+}
+
+
 module.exports = Hero;
