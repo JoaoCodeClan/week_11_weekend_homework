@@ -24,7 +24,7 @@ describe("Hero", function(){
    food = new Food("cheese", 10, false);
    food1 = new Food("Pizza", 50, false);
    rat = new Rat();
-   hero = new Hero("Groot", 200, "Pizza");
+   hero = new Hero("Groot", 200,"Pizza");
  });
 
  it("should be able to have a name", function(){
@@ -53,8 +53,14 @@ describe("Hero", function(){
  });
 
  it("hero should be able to eat food, and health should go up by the replenishment value", function(){
+   hero.eatFood(food);
+   assert.strictEqual(hero.health,210);
+
+ });
+
+ it("If the food is their favourite food, their health should go up by 1.5 * value.", function(){
    hero.eatFood(food1);
-   assert.strictEqual(hero.health,250);
+   assert.strictEqual(hero.health,275);
 
  });
 })

@@ -10,18 +10,21 @@ const Hero = function(name, health,favouriteFood){
 }
 
 Hero.prototype.countTasks= function(){
-   return this.tasksToComplete.length;
+  return this.tasksToComplete.length;
 
 }
 
 Hero.prototype.addTask = function(task){
-    this.tasksToComplete.push(task);
+  this.tasksToComplete.push(task);
 
 }
 
 Hero.prototype.eatFood = function(itemToEat){
+  if(itemToEat.name === this.favouriteFood){
+    this.health += itemToEat.replenishment*1.5
+  }else{
     this.health += itemToEat.replenishment;
-
+  }
 }
 
 module.exports = Hero;
