@@ -10,7 +10,4 @@ const DifficultyLevel = {
 }
 
 
-
-
-
 module.exports= DifficultyLevel;
