@@ -30,21 +30,30 @@ Hero.prototype.eatFood = function(itemToEat){
 Hero.prototype.sortTasksByDifficulty = function(){
   return this.tasksToComplete.sort(function(a,b) {
     return (a.difficultyLevel)-(b.difficultyLevel);
-});
+  });
 }
 
 
 Hero.prototype.sortTasksByUrgency = function(){
   return this.tasksToComplete.sort(function(a,b) {
     return (a.urgencyLevel)-(b.urgencyLevel);
-});
+  });
 }
 
 Hero.prototype.sortTasksByReward = function(){
   return this.tasksToComplete.sort(function(a,b) {
     return (a.reward)-(b.reward);
-});
+  });
 }
+
+  Hero.prototype.showCompletedTasks = function(){
+    return  this.tasksToComplete.filter(function(task){
+      return task.iscomplete === true;
+    });
+
+  }
+
+
 
 
 module.exports = Hero;
