@@ -19,23 +19,23 @@ let dif3;
 
  it("should be able to get a value  of 0 for difficulty level easy", function(){
 
-   assert.strictEqual(1,dif);
+   assert.strictEqual(dif, 1);
 
  })
  it("should be able to get a value of 1 for difficulty level medium", function(){
 
-   assert.strictEqual(2,dif1);
+   assert.strictEqual(dif1, 2);
 
  })
 
  it("should be able to get a value of 2 for difficulty level hard", function(){
 
-   assert.strictEqual(3,dif2);
+   assert.strictEqual(dif2, 3);
 
  })
  it("should be able to get a value of 3 for difficulty very hard", function(){
 
-   assert.strictEqual(4,dif3);
+   assert.strictEqual(dif3, 4);
 
  })
 

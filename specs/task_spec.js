@@ -18,22 +18,22 @@ let task4;
  });
 
  it("should be able to have a difficulty level value", function(){
-   assert.strictEqual(1,task1.difficultyLevel);
+   assert.strictEqual(task1.difficultyLevel, 1);
 
  })
 
  it("should be able to have an urgency level value", function(){
-   assert.strictEqual(2,task2.urgencyLevel);
+   assert.strictEqual(task2.urgencyLevel, 2);
 
  })
 
  it("should be able to have a value for reward", function(){
-   assert.strictEqual(30,task3.reward);
+   assert.strictEqual(task3.reward, 30);
 
  })
 
  it("should be able to return boolean for iscomplete", function(){
-   assert.strictEqual(true,task1.iscomplete);
+   assert.strictEqual(task1.iscomplete, true);
 
  })
 

@@ -17,25 +17,25 @@ let foryest;
  });
 
 
- it("should be able to get a value  of 0 for not urgent", function(){
+ it("should be able to get a value  of 1 for not urgent", function(){
 
-   assert.strictEqual(1,noturg);
-
- })
- it("should be able to get a value  of 1 for urgent", function(){
-
-   assert.strictEqual(2,urg);
+   assert.strictEqual(noturg, 1);
 
  })
- it("should be able to get a value  of 2 for emergency", function(){
+ it("should be able to get a value  of 2 for urgent", function(){
 
-   assert.strictEqual(3,emer);
+   assert.strictEqual(urg, 2);
+
+ })
+ it("should be able to get a value  of 3 for emergency", function(){
+
+   assert.strictEqual(emer, 3);
 
  })
 
- it("should be able to get a value  of 3 for Foryesterday", function(){
+ it("should be able to get a value  of 4 for Foryesterday", function(){
 
-   assert.strictEqual(4,foryest);
+   assert.strictEqual(foryest, 4);
 
  })
 

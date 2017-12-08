@@ -15,7 +15,7 @@ let food;
 
  it("should be able to Poison an item", function(){
    rat.poisonItem(food);
-   assert.strictEqual(true, food.isPoisoned);
+   assert.strictEqual(food.isPoisoned, true);
 
  })
 

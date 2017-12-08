@@ -12,15 +12,15 @@ beforeEach(function(){
 });
 
 it("food should have a name", function(){
-  assert.strictEqual("pasta", food.name);
+  assert.strictEqual(food.name, "pasta");
 })
 
 it("food should have a replenishment value", function(){
-  assert.strictEqual(10, food.replenishment);
+  assert.strictEqual(food.replenishment, 10);
 })
 
 it("food should be able to check if its poisoned", function(){
-  assert.strictEqual(false, food.isPoisoned)
+  assert.strictEqual(food.isPoisoned, false)
 })
 
 })

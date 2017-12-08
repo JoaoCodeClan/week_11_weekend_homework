@@ -28,17 +28,22 @@ describe("Hero", function(){
  });
 
  it("should be able to have a name", function(){
-   assert.strictEqual("Groot",hero.name);
+   assert.strictEqual(hero.name, "Groot");
 
  })
 
  it("should be able to have a value for health ", function(){
-   assert.strictEqual(200,hero.health);
+   assert.strictEqual(hero.health, 200);
 
  })
  it("should be able to have a favourite food", function(){
-   assert.strictEqual("Pizza",hero.favouriteFood);
+   assert.strictEqual(hero.favouriteFood, "Pizza");
 
  })
+
+ // it("tasksToComplete should start empty", function(){
+ //   assert.strictEqual(hero.countTasks(), 0);
+
+ // })
 
 })
