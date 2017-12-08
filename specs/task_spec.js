@@ -32,4 +32,9 @@ let task4;
 
  })
 
+ it("should be able to return boolean for iscomplete", function(){
+   assert.strictEqual(true,task1.iscomplete);
+
+ })
+
 })
