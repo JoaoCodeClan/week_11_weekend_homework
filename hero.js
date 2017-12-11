@@ -61,6 +61,14 @@ Hero.prototype.showIncompletTasks = function(){
 }
 
 
+Hero.prototype.talk = function(){
+  return `I AM ${this.name}`;
+}
+
+
+
+
+
 
 
 

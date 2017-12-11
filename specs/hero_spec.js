@@ -115,4 +115,8 @@ describe("Hero", function(){
     assert.strictEqual(hero.health,160);
   });
 
+  it("Heroes should be able to talk", function(){
+      assert.strictEqual("I AM Groot", hero.talk());
+  });
+
 })
